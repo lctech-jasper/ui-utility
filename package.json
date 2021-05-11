@@ -6,6 +6,15 @@
   "workspaces": [
     "packages/*"
   ],
+  "files": [
+    "CHANGELOG.md",
+    "package.json",
+    "packages/**/dist/*",
+    "packages/**/*.js",
+    "packages/**/*.d.ts",
+    "packages/**/CHANGELOG.md",
+    "packages/**/package.json"
+  ],
   "scripts": {
     "postinstall": "lerna bootstrap",
     "clean": "lerna run clean --parallel",
@@ -16,14 +25,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FireQQTW/ui-utility.git"
+    "url": "git+https://github.com/lctech-jasper/ui-utility.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FireQQTW/ui-utility/issues"
+    "url": "https://github.com/lctech-jasper/ui-utility/issues"
   },
-  "homepage": "https://github.com/FireQQTW/ui-utility#readme",
+  "homepage": "https://github.com/lctech-jasper/ui-utility#readme",
   "devDependencies": {
     "@types/node": "^15.0.2",
     "lerna": "^4.0.0",

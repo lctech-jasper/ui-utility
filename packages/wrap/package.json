@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "wrap at elem.",
   "author": "jasper Liu <jasper@lctech.com.tw>",
-  "homepage": "https://github.com/FireQQTW/ui-utility/tree/main/packages/wrap#readme",
+  "homepage": "https://github.com/lctech-jasper/ui-utility/tree/master/packages/wrap",
   "license": "ISC",
   "private": true,
   "main": "dist/index.js",
