@@ -3,14 +3,18 @@
     "packages/*"
   ],
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "useWorkspaces": true,
   "npmClient": "yarn",
   "command": {
     "publish": {
-      "allowBranch": ["master"],
+      "allowBranch": [
+        "master"
+      ],
       "conventionalCommits": true
     }
   },
-  "version": "0.0.0"
+  "version": "0.0.1"
 }
