@@ -2,5 +2,15 @@
   "packages": [
     "packages/*"
   ],
+  "private": true,
+  "workspaces": ["packages/*"],
+  "useWorkspaces": true,
+  "npmClient": "yarn",
+  "command": {
+    "publish": {
+      "allowBranch": ["master"],
+      "conventionalCommits": true
+    }
+  },
   "version": "0.0.0"
 }

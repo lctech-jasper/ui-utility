@@ -2,8 +2,16 @@
   "name": "ui-utility",
   "version": "1.0.0",
   "description": "test lit for company UI server",
-  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
+    "postinstall": "lerna bootstrap",
+    "clean": "lerna run clean --parallel",
+    "lint": "lerna run lint",
+    "build": "lerna run build --stream",
+    "check-types": "lerna run check-types",
     "test": "test"
   },
   "repository": {
@@ -17,6 +25,14 @@
   },
   "homepage": "https://github.com/FireQQTW/ui-utility#readme",
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@types/node": "^15.0.2",
+    "lerna": "^4.0.0",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "eslint": "^7.26.0",
+    "ts-jest": "^26.5.6"
   }
 }
