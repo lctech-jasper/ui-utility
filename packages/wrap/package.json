@@ -1,0 +1,29 @@
+{
+  "name": "wrap",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "jasper Liu <jasper@lctech.com.tw>",
+  "homepage": "https://github.com/FireQQTW/ui-utility/tree/main/packages/wrap#readme",
+  "license": "ISC",
+  "main": "lib/wrap.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lctech-jasper/ui-utility.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/lctech-jasper/ui-utility/issues"
+  },
+  "dependencies": {
+    "lit": "^2.0.0-rc.2"
+  }
+}
