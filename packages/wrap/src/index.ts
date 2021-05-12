@@ -14,6 +14,6 @@ export class Wrap extends LitElement {
   name?: string = 'World';
 
   render() {
-    return html`<p>Hello, ${this.name}!</p>`;
+    return html`<p>sHello, ${this.name}!</p>`;
   }
 }
