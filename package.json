@@ -2,7 +2,6 @@
   "name": "@lctech-jasper/ui-utility",
   "version": "1.0.0",
   "description": "test lit for company UI server",
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
