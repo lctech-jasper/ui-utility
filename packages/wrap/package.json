@@ -15,7 +15,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lctech-jasper/ui-utility.git"
+    "url": "git+https://github.com/lctech-jasper/ui-utility.git",
+    "directory": "packages/wrap"
   },
   "scripts": {
     "clean": "rm -rf ./dist",
@@ -28,8 +29,5 @@
   },
   "dependencies": {
     "lit": "^2.0.0-rc.2"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
