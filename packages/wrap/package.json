@@ -1,5 +1,5 @@
 {
-  "name": "@lc-ui/wrap",
+  "name": "@lctech-jasper/wrap",
   "version": "0.0.1",
   "description": "wrap at elem.",
   "author": "jasper Liu <jasper@lctech.com.tw>",
@@ -29,5 +29,8 @@
   },
   "dependencies": {
     "lit": "^2.0.0-rc.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
