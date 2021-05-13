@@ -4,7 +4,7 @@ This repo base on `lerna`, don't want to duplicate module exist under every pack
 
 ## Install
 
-`yarn install` can't work on root ```package.json``` property that `private` is `true`, so install modules use `lerna` command.
+Use the lerna command or the lerna bootstrap to install the module. Do not use NPM or Yarn, because NPM will generate duplicate modules. And when the property is private, Yarn does not support installation on the root package.json.
 
 ```
 lerna bootstrap
