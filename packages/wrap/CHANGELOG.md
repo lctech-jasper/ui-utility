@@ -11,6 +11,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [0.0.6](https://github.com/lctech-jasper/ui-utility/compare/@lctech-jasper/wrap@0.0.5...@lctech-jasper/wrap@0.0.6) (2021-05-13)
+
+**Note:** Version bump only for package @lctech-jasper/wrap
+
+
+
+
+
 ## [0.0.5](https://github.com/lctech-jasper/ui-utility/compare/@lctech-jasper/wrap@0.0.4...@lctech-jasper/wrap@0.0.5) (2021-05-12)
 
 **Note:** Version bump only for package @lctech-jasper/wrap
