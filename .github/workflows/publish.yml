@@ -23,5 +23,5 @@ jobs:
     - name: Build lerna 🔧
       run: lerna run build
     - name: Publish 🚀
-      run: leran publish
+      run: lerna publish
       
