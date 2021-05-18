@@ -7,17 +7,12 @@ This repo base on `lerna`, don't want to duplicate module exist under every pack
 Use the lerna command or the lerna bootstrap to install the module. Do not use NPM or Yarn, because NPM will generate duplicate modules. And when the property is private, Yarn does not support installation on the root package.json.
 
 ```
-lerna bootstrap
+lerna bootstrap --ignore-prepublish
 ```
 
+⚠ warn: If you do development in local, remember to run `lerna bootstrap --ignore-prepublish` when install npm modules.
+
+[Deprecation Note: prepublish](https://docs.npmjs.com/cli/v7/using-npm/scripts#prepare-and-prepublish)
+
+
 ## Q & A
-
-1. ### Install error
-  ```bash
-  error An unexpected error occurred: "Failed to replace env in config: ${CI_TOKEN}"
-  ```
-  Because `.npmrc` has variable `${CI_TOKEN}`, you can add `CI_TOKEN` to `.bashrc` or `.zshrc`.
-
-  ```bash
-  export CI_TOKEN=
-  ```

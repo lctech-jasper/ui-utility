@@ -16,7 +16,7 @@
     "packages/**/package.json"
   ],
   "scripts": {
-    "postinstall": "lerna bootstrap",
+    "postinstall": "lerna bootstrap --ignore-prepublish",
     "clean": "lerna run clean --parallel",
     "lint": "lerna run lint",
     "build": "lerna run build --stream",
