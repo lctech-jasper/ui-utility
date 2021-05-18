@@ -29,5 +29,6 @@
   },
   "dependencies": {
     "lit": "^2.0.0-rc.2"
-  }
+  },
+  "gitHead": "338b8c42d32d603f8690ac1a16980b8f8ab00099"
 }
