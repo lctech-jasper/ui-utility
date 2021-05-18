@@ -20,15 +20,20 @@ jobs:
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        npm install --global lerna
+        yarn global add lerna
     - name: Install typescript 🔧
       run: |
-        npm i typescript -g
+        yarn global add typescript
     - name: Install module 🔧
-      run: |
-        lerna bootstrap
-        lerna run build
-        lerna publish --yes
+      run: lerna bootstrap
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.CI_TOKEN }}
+    - name: Build module 🔧
+      run: lerna run build
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.CI_TOKEN }}
+    - name: Publish module 🔧
+      run: lerna publish --yes
       env:
         NODE_AUTH_TOKEN: ${{ secrets.CI_TOKEN }}
       
