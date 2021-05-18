@@ -2,7 +2,7 @@ name: Node.js Publish (GitHub)
 
 on:
   push:
-    branchs: [main,master]
+    branchs: [main,master,test-npm]
 
 jobs:
   build:
@@ -11,10 +11,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Setup Node ${{ matrix.node_version }} 🔧
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2
       with:
         node-version: 15
         registry-url: 'https://npm.pkg.github.com'
+        scope: '@lctech-jasper'
     - name: Install lerna 🔧
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -25,14 +26,8 @@ jobs:
         npm i typescript -g
     - name: Install module 🔧
       run: lerna bootstrap
-      env:
-        CI_TOKEN: ${{ secrets.CI_TOKEN }}
-    - name: Build lerna 🔧
       run: lerna run build
-      env:
-        CI_TOKEN: ${{ secrets.CI_TOKEN }}
-    - name: Publish 🚀
       run: lerna publish --yes
       env:
-        CI_TOKEN: ${{ secrets.CI_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.CI_TOKEN }}
       
