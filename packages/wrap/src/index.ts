@@ -13,7 +13,7 @@ export class Wrap extends LitElement {
   render() {
     return html`
       <div>
-        <div class="wrap_header">wrap web components</div>
+        <div class="wrap_header">wrap web componen</div>
         <slot></slot>
       </div>
     `;
