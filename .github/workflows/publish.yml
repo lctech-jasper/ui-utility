@@ -30,6 +30,8 @@ jobs:
         npm i typescript -g
     - name: Install module 🔧
       run: lerna bootstrap
+      env:
+        CI_TOKEN: ${{ secrets.CI_TOKEN }}
     - name: Build lerna 🔧
       run: lerna run build
       env:
