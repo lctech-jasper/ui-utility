@@ -32,6 +32,8 @@ jobs:
       run: lerna bootstrap
     - name: Build lerna 🔧
       run: lerna run build
+      env:
+        CI_TOKEN: ${{ secrets.CI_TOKEN }}
     - name: Publish 🚀
       run: lerna publish --yes
       
