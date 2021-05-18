@@ -15,6 +15,11 @@ export class Wrap extends LitElement {
   aaa?: string = 'qqq';
 
   render() {
-    return html`<p>sHello, ${this.name}!</p>`;
+    return html`
+      <div>
+        <div class="wrap_header">wrap web component</div>
+        <slot></slot>
+      </div>
+    `;
   }
 }
