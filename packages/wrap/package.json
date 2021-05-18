@@ -1,6 +1,6 @@
 {
   "name": "@lctech-jasper/wrap",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "wrap at elem.",
   "author": "jasper Liu <jasper@lctech.com.tw>",
   "homepage": "https://github.com/lctech-jasper/ui-utility/tree/master/packages/wrap",
