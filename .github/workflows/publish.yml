@@ -15,11 +15,6 @@ jobs:
       with:
         node-version: 15
         registry-url: 'https://npm.pkg.github.com'
-    - name: <NPM> Authenticate with GitHub package registry
-      run: |
-          # echo "//npm.pkg.github.com:_authToken=${{ secrets.CI_TOKEN }}" >> .npmrc 
-          # echo "//npm.pkg.github.com/:_authToken=${{ secrets.CI_TOKEN }}" >> .npmrc
-          # echo "@lctech-jasper=https://npm.pkg.github.com/lctech-jasper" >> .npmrc
     - name: Install lerna 🔧
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
