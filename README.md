@@ -9,3 +9,15 @@ Use the lerna command or the lerna bootstrap to install the module. Do not use N
 ```
 lerna bootstrap
 ```
+
+## Q & A
+
+1. ### Install error
+  ```bash
+  error An unexpected error occurred: "Failed to replace env in config: ${CI_TOKEN}"
+  ```
+  Because `.npmrc` has variable `${CI_TOKEN}`, you can add `CI_TOKEN` to `.bashrc` or `.zshrc`.
+
+  ```bash
+  export CI_TOKEN=
+  ```
