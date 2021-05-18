@@ -9,10 +9,6 @@ export class Wrap extends LitElement {
       color: blue;
     }
   `;
-  
-  @property()
-  name?: string = 'World';
-  aaa?: string = 'qqq';
 
   render() {
     return html`
