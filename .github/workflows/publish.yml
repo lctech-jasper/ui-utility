@@ -38,4 +38,6 @@ jobs:
         CI_TOKEN: ${{ secrets.CI_TOKEN }}
     - name: Publish 🚀
       run: lerna publish --yes
+      env:
+        CI_TOKEN: ${{ secrets.CI_TOKEN }}
       
