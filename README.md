@@ -10,7 +10,7 @@ Use the lerna command or the lerna bootstrap to install the module. Do not use N
 lerna bootstrap
 ```
 
-## Q & A
+## Q & A
 
 1. ### Install error
   ```bash
