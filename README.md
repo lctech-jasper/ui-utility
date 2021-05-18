@@ -16,7 +16,7 @@ lerna bootstrap
   ```bash
   error An unexpected error occurred: "Failed to replace env in config: ${CI_TOKEN}"
   ```
-  Because `.npmrc` has variable `${CI_TOKEN}`, you can add `CI_TOKEN` to `.bashrc` or `.zshrc`.
+  Because `.npmrc` has variable `${CI_TOKEN}`, you can add `CI_TOKEN` to `.bashrc` or `.zshrc`.
 
   ```bash
   export CI_TOKEN=
